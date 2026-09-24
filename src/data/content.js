@@ -1,5 +1,5 @@
 export const links = {
-  github: '[ADD GITHUB URL]', linkedin: '[linkedin.com/in/aneesunisa-t-a-245a623b6]', resume: '[ADD RESUME FILE]',
+  github: '[ADD GITHUB URL]', linkedin: '[linkedin.com/in/aneesunisa-t-a-245a623b6]', resume: '/Portfolio/resume/Dmain.pdf',
   email: 'aneesunisat@gmail.com',
 }
 export const isUrl = (v) => /^https?:\/\//.test(v) || v.startsWith('/')

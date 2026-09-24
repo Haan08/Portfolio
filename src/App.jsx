@@ -261,7 +261,7 @@ export default function App() {
         <Section id="contact" title="Contact">
           <div className="grid2">
             <div className="card"><p><a href={'mailto:' + links.email}>{links.email}</a></p><p>Bengaluru, India</p>
-              <div className="row"><Btn href={links.linkedin}>LinkedIn</Btn><Btn href={links.github}>GitHub</Btn><Btn href={links.resume}>Resume</Btn></div></div>
+              <div className="row"><Btn href={links.linkedin}>LinkedIn</Btn></div></div>
             
           </div>
         </Section>
