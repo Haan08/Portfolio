@@ -1,0 +1,16 @@
+name: CI
+on:
+  push: { branches: [main] }
+  pull_request:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: npm }
+      - run: npm ci
+      - run: npm run build
+      # No lint or test scripts are defined yet, so none are run.
+      # DEPLOY: not configured. Recommended: connect this repo to Vercel or Netlify (HTTPS by default);
+      # no workflow step is needed. Add a deploy step here only if you choose another host.
